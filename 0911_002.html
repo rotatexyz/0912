@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        #ani {
+            width: 100px;
+            height: 100px;
+            border: 1px solid darkviolet;
+            animation: rotate 4s reverse cubic-bezier(.5,-0.95,.55,1.98) infinite;
+            /* animation-name: rotate;
+            animation-duration: 2s;
+            animation-direction: normal;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; */
+            position: absolute;
+        }
+
+        @keyframes rotate {
+            from {
+                top: 0;
+                left: 0;
+            }
+            25% {
+                top: 0;
+                left: 500px;
+                background: mediumspringgreen;
+            }
+            50% {
+                top: 500px;
+                left: 500px;
+            }
+            75% {
+                left: 0;
+                top: 500px;
+            }
+            to {
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="ani">
+
+    </div>
+</body>
+</html>
