@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <form action="action.php">
+    <h3>이메일 주소는?</h3>
+    <input type="email" name="" id="" required placeholder="abc@abc.com"><br><br>
+    <input type="submit"><input type="reset">
+    <!-- required: 검토해주는 속성태그 -->    
+    </form>
+
+    <form action="ee.php">
+        <h3>당신의 성별은?</h3>
+        <input type="radio" name="gender" id="">여성 <input type="radio" name="gender">남성
+        <!-- radio: 단일선택 속성태그. name=""를 반드시 똑같이 써줘야 함 -->
+
+        <h3>당신의 취미를 2가지 선택해 주세요</h3>
+        <input type="checkbox" name="game" id="">게임
+        <input type="checkbox" name="mung" id="">멍때리기
+        <input type="checkbox" name="TV" id="">TV보기
+        <input type="checkbox" name="drive" id="">드라이브
+        <input type="checkbox" name="shopping" id="">쇼핑
+        <input type="checkbox" name="fishing" id="">낚시
+        <input type="checkbox" name="snowboarding" id="">스노우보드 타기
+        <!-- 전부 다 선택할 수 있음. css에서는 선택 막기가 불가능.. -->
+    </form>
+    <br>
+    <form>
+        <input type="file" name="" id=""> <br><br>
+        <!-- 첨부파일 올려주는 속성태그 -->
+        
+        <textarea name="" id="" cols="40" rows="15"></textarea>
+        <!-- textarea 쓸때는 <textarea/>를 엔터쳐서 정리하지말것!!! -->
+        <br><br>
+        
+        <button>로그인</button> <button>취소</button>
+        <br>
+        <input type="number" name="" id="" step="5"><br><br>
+        <input type="range"><br><br>
+        <input type="tel">
+    </form>
+    
+</body>
+</html>

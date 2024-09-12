@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스쉐도우</title>
+    <style>
+        div {
+            width: 350px;
+            height: 40px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            /*x축 y축 blur양 순서. , 안붙음*/
+            /* inset = 안쪽으로 그림자가 생김. 이게 더 활용도가 높음 */
+            border-radius: 20px;
+            background: mediumspringgreen;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <form action="action.php">
+        <h1>회원 로그인</h1>
+        <label>아이디<input type="text" placeholder="아이디입력" autocomplete="off"></label><br>
+        <!-- <label></label>태그는 아이디 글씨만 선택해도 입력할 수 있게끔 사용성을 높여주는 태그 -->
+        패스워드 <input type="password" placeholder="비밀번호입력"><br>
+        <input type="submit" value="로그인"> <input type="reset">
+    </form> 
+    <form action="action2.php">
+        <input type="color" name="" id=""><br>
+        <input type="date" name="" id=""><br>
+        <input type="datetime-local" name="" id=""><br>
+        <input type="week" name="" id="">
+    </form>
+       <!-- form 치고 Tab키 누르기 -->
+    <!-- input 치고 Tab 누르기 -->
+    <!-- text: 흐린 텍스트 보여주는 창
+    password: 비밀번호 입력
+    submit: 제출 버튼
+    reset: 초기화 버튼
+    autocomplete: 자동입력
+    autocomplete="off" 자동저장 꺼놓기
+    form 태그를 빼고 input요소를 작성하지 않으면 입력만 되고 폼 전송이 되지 않음
+    input의 모양은 javascript로만 바꿀 수 있음 -->
+ 
+</body>
+</html>

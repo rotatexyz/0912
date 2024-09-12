@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESET.CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            /* outline, border에 0을 주면 호버했을때 선이 안 생겨서 깔끔해짐 */
+            /* margin: 0; 를 주면 각각 세팅하는 수고스러움이 덜해짐 */
+        }
+
+        body {
+            font-family: "맑은고딕", 돋움, 돋움체, 굴림, 굴림체;
+            font-size: 16px;
+            line-height: 1.7;
+            overflow-x: hidden;
+            /* overflow-x: hidden; 을 써주면 가로 스크롤바가 안생김 */
+        }
+
+        모든 시멘틱 태그 {
+            display: block;
+            /* 마우스 호버했을때 편하게 하려고 */
+        }
+
+        ul, ol, dl {
+            list-style: none;
+        }
+
+        a{ 
+            text-decoration: none;
+            color: aquamarine;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        input, select {
+            vertical-align: middle;
+            /* select 요소가 설정한 시멘틱 공간을 넘어가는 경우를 막아주기 위해 설정해주는 css */
+         }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>오늘의 날씨는</dt>
+        <dd>비</dd>
+        <dd>습함</dd>
+        <dd>맑음</dd>
+        <dd>흐림</dd>
+        <dd>끈적함</dd>
+    </dl>
+    <!-- dl, dt, dd는 외워두기 -->
+    <select name="" id="">
+        <option value="서울대학교"></option>
+        <option value="연세대학교"></option>
+        <option value="고려대학교"></option>
+        <option value="서강대학교"></option>
+        <option value="한양대학교"></option>
+    </select>
+    <!-- select 태그: 선택하는 창을 만들어주는 태그 -->
+</body>
+</html>
